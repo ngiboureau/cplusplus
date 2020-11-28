@@ -5,7 +5,10 @@
 class IntStack
 {
     public:
-        
+
+  // vr: si tu utilises un std::vector ne mets pas l'adresse d'un
+  // vecteur pour ton tableau mais directement un objet
+  
         IntStack (int a, ...) //a est le nombre de valeurs initiales
         {
             std::vector<int>* init = new std::vector<int>;
@@ -53,6 +56,7 @@ class IntStack
         }
 
     private:
-    
+  // vr: mets un objet directemetn comme cela tu évites de faire new
+  // et delete std::vector<int> stack;
         std::vector<int>* stack;
 };
