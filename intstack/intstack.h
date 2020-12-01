@@ -41,6 +41,8 @@ class IntStack
 
         int pop()
         {
+            if (stack.size()==0)
+                throw "cannot pop an empty file";
             int i = stack[stack.size()-1];
             stack.pop_back();
             return i;
