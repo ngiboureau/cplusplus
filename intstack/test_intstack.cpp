@@ -3,7 +3,7 @@
 
 int main()
 {
-    IntStack stack = IntStack (1,4);
+    IntStack stack = IntStack (10,4);
     stack.push(2);
     stack.print();
     std::cout << stack.pop() << std::endl;
